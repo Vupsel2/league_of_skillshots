@@ -283,7 +283,8 @@ while playing:
     pygame.display.flip()
    
     for enemy in enemies:
-       # if player_mask.overlap(enemy_mask,(enemy[1].x-player_rect.x,enemy[1].y-player_rect.y)):
+       if player_mask.overlap(enemy_mask,(enemy[1].x-player_rect.x,enemy[1].y-player_rect.y)):
+           playing=None
             
         
          
